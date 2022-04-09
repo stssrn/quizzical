@@ -19,7 +19,7 @@ export default function App() {
             const data = await res.json();
             setQuizData(data);
         })();
-    }, [])
+    }, []);
 
     const startQuiz = () => {
         updateQuestions();
@@ -27,19 +27,20 @@ export default function App() {
         leftBlob.current.classList.add("left-blob-animation");
         rightBlob.current.classList.add("right-blob-animation");
         setTimeout(() => {
-            setQuizStarted(prevQuizStarted => !prevQuizStarted)
-            main.current.classList.add("allow-overlow")
+            setQuizStarted(prevQuizStarted => !prevQuizStarted);
+            main.current.classList.add("allow-overlow");
         }, 1000);
     };
 
     const checkAnswers = () => {
         if (showCorrectAnswers) {
             updateQuestions();
+            setIsCorrectArray([]);
             setShowCorrectAnswers(false);
         } else {
             const correctCount = isCorrectArray.reduce((acc, x) => x ? acc + 1 : acc + 0, 0);
             setCorrectAnswersCount(correctCount);
-            setShowCorrectAnswers(true)
+            setShowCorrectAnswers(true);
         }
     }
 
