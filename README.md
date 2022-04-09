@@ -1,12 +1,18 @@
 # Quizzical
 
 
+![Preview image](./preview.gif)
+
 This is the fourth module's solo project of Scrimba's [Learn React for free](https://scrimba.com/learn/learnreact) course.
 
-![Preview image](./preview.gif)
+## Requirements
+- Two screens (start & questions)
+- Pull 5 questions from the [Open Trivia Database API](https://opentdb.com/api_config.php)
+- Tally correct answers after "Check answers" is clicked
+- Styled & Polished ([Figma design reference](https://www.figma.com/file/E9S5iPcm10f0RIHK8mCqKL/Quizzical-App))
+
 ---
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app)
 
 ## Run in development mode
 ```
@@ -17,3 +23,5 @@ npm start
 ```
 npm run build
 ```
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app)
