@@ -78,7 +78,7 @@ export default function App() {
                     {questionElements}
                     <div className="questions__answers-box">
                         {showCorrectAnswers &&
-                        <p className="questions__score">You scored {correctAnswersCount} / {questionElements.length} correct answers</p>
+                        <p className="questions__score">You scored {correctAnswersCount}/{questionElements.length} correct answers</p>
                         }
                         <button
                             type="button" 
