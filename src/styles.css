@@ -73,13 +73,8 @@ main {
 }
 
 @keyframes questions-animation {
-    from {
-        opacity: 0%;
-    }
-    to {
-        opacity: 100%;
-    }
-    
+    from { opacity: 0%; }
+    to { opacity: 100%; }  
 }
 
 .question__text {
@@ -150,10 +145,12 @@ main {
 }
 
 .questions__answers-box {
+    margin: 32px auto;
     width: 100%;
     display: flex;
     gap: 32px;
     justify-content: center;
+    align-items: center;
 }
 
 .questions .main-button {
@@ -165,6 +162,8 @@ main {
 }
 
 .questions__score {
+    font-size: 20px;
+    margin: 8px;
     font-weight: 700;
     width: 0px;
     text-align: right;

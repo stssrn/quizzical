@@ -38,7 +38,7 @@ export default function App() {
             setIsCorrectArray([]);
             setShowCorrectAnswers(false);
         } else {
-            const correctCount = isCorrectArray.reduce((acc, x) => x ? acc + 1 : acc + 0, 0);
+            const correctCount = isCorrectArray.reduce((acc, x) => x ? acc + 1 : acc, 0);
             setCorrectAnswersCount(correctCount);
             setShowCorrectAnswers(true);
         }
